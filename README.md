@@ -15,6 +15,15 @@ over a window's titlebar, then use simple Precision Touchpad gestures or the
 optional mouse-button HUD to snap, move, and resize it. Inspired by the macOS app
 [Swish](https://highlyopinionated.co/swish/).
 
+> [!NOTE]
+> **关于此 Fork (About this fork):**
+>
+> 本仓库 Fork 自原项目 [bwya77/swoosh](https://github.com/bwya77/swoosh)。
+>
+> 作为 macOS 上经典窗口管理工具 [Swish](https://highlyopinionated.co/swish/) 的忠实粉丝，我一直渴望在 Windows 上也能拥有同样行云流水般的触控板手势体验，此前甚至萌生过自己手搓一个 Windows 版的想法。看到原作者 [@bwya77](https://github.com/bwya77) 如此优雅、纯粹且高质量的开源实现，深表敬佩！
+>
+> 在真机使用中，发现原版代码在部分配备 ELAN 触控板的设备（采用微软 PTP 单 Collection 串行/混合上报模式）上无法识别双指/多指手势。因此本仓库**增加了对 ELAN 等常见精确式触控板的 Serial/Hybrid 多指协议兼容支持**，修复了无法触发手势的问题，相关修改已向上游源项目提交 Pull Request ([PR #14](https://github.com/bwya77/swoosh/pull/14))。
+
 ## See it in action
 
 Two fingers on your touchpad, and the window goes where you swipe.
